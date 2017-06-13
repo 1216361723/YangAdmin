@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>YangAdmin</title>
+    <script src="../../dist/js/include.js"></script>
+    <include src="../public/base.html"></include>
+
+</head>
+<body>
+<!-- #include file="../public/header.html" -->
+<!--header-->
+<include src="../public/header.html"></include>
+
+<div class="container-fluid">
+    <h3>Angular学习之路 <span class="label label-danger">New</span></h3>
+    <div class="row">
+        <div class="col-lg-8 col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    初识angular
+                </div>
+                <div class="panel-body">
+                    在接触angular的时候是2015年的时候，那时候看到angular数据双向绑定，感觉很牛，就试着去了解了一下。但是接着我去公司上班的时候，公司并没有用angular，然后就没有学习angular了。
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        使用angular的准备
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        刚开始使用的angular的时候 我去官网看了一下angular APi和结合在菜鸟教程的使用，花了差不多1周的时间把angular简单的用法熟知并且运用了一遍。
+                    </p>
+                    <p>
+                        <i class="glyphicon glyphicon-hand-right"></i> <a href="http://www.angularjsapi.cn/" target="_blank">angularjs APi文档</a>
+                    </p>
+                    <p>
+                        <i class="glyphicon glyphicon-hand-right"></i> <a href="http://www.runoob.com/angularjs/angularjs-tutorial.html" target="_blank">angularjs 菜鸟教程</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        开始使用angularJs
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        因为我开发的项目中前端后台没有多大的要求，前端pc版本需要兼容ie8,版本 所以我特地去查了一下angularJs的兼容性。
+                    </p>
+                    <p>
+                        模块/
+                        控制器/
+                        指令/
+                        作用域/
+                        模板/
+                        链式函数/
+                        过滤器/
+                        依赖注入/
+                    </p>
+                    <p>
+                        angularJs兼容性：AngularJS 1.3抛弃了对IE8的支持，AngularJS 1.2将继续支持IE8，但核心团队已经不打算在解决IE8及之前版本的问题上花时间。
+                    </p>
+                    <p>
+                        所以 如果要考虑ie兼容性问题个人认为可以换一框架进行开发，不然会带来不必要的烦恼。因为刚开始使用angularJs 所以我选择了一个1.5.8版本的加上bootstrap来开发后台
+                        pc的则没有用angularJs，wap端用的是angular。
+                    </p>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        AngularJs适合开发什么
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        网上大多人都说AngularJs适合做单页面应用程序（SPA应用），AngularJS自身框架的一些bug，不适合界面频繁交互的场景（如：游戏类网站）等
+                    </p>
+                    <p>
+                        AngularJS是一个MVVM框架：当数据发生变化时，框架自动进行数据绑定，自动更新页面上的数据。
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        angularjs的优点
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        1.数据的双向绑定
+                    </p>
+                    <p>
+                        2.代码模块化，每个模块的代码独立拥有自己的作用域，model，controller等。
+                    </p>
+                    <p>
+                        3.强大的directive可以将很多功能封装成HTML的tag,属性或者注释等，这大大美化了HTML的结构，增强了可阅读性；                    </p>
+                    <p>
+                        4.依赖注入，将这种后端语言的设计模式赋予前端代码，这意味着前端的代码可以提高重用性和灵活性，未来的模式可能将大量操作放在客户端，服务端只提供数据来源和其他客户端无法完成的操作；                    </p>
+                    <p>
+                        5.测试驱动开发，angularjs一开始就以此为目标，使用angular开发的应用可以很容易地进行单元测试和端对端测试，这解决了传统的js代码难以测试和维护的缺陷                    </p>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        angularjs的缺点
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        1.双向数据绑定是一把双刃剑。随着组件增加，项目越来越复杂，双向数据绑定带来性能问题。
+                    </p>
+                    <p>
+                        2.在JavaScript（ES5）中，并没有实现当变量或对象改变时发出通知的功能，Angular的实现方法被叫做“Dirty-checking（脏检查机制）”，通过跟踪数据的改变再动态更新用户界面（UI）。
+                    </p>
+                    <p>
+                        3.在Angular的作用域中任何操作的执行都会引发Dirty-checking，随着绑定数量的增加性能就会越低。
+                    </p>
+                    <p>
+                        4.Angular 2.0推翻重做使得目前不宜采用此框架 ；
+                    </p>
+                    <p>
+                        5.Angular 1.x版本其实是个比较旧的东西了，现在看来有些理念过时了，比如依赖注入、自己独特的模块化，这些东西其实在ES6下已经很好地被解决了。
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-4">
+            右侧牛逼的浮动导航
+        </div>
+    </div>
+
+</div>
+<!--	-->
+<include src="../public/footer.html"></include>
+
+<script src="../../plugins/jquery-2.1.3/jquery.min.js"></script>
+<script src="../../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="../../dist/js/common.js"></script>
+<script src="../../dist/js/yang.js"></script>
+</body>
+</html>
