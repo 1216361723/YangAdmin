@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>YangAdmin</title>
+    <script src="../../dist/js/include.js"></script>
+    <include src="../public/base.html"></include>
+
+</head>
+<body>
+<!-- #include file="../public/header.html" -->
+<!--header-->
+<include src="../public/header.html"></include>
+
+<div class="container-fluid">
+    <h3>Bootstrap图片显示 <span class="label label-danger">New</span></h3>
+    <div class="row">
+        <div class="col-lg-8 col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    圆形显示
+                </div>
+                <div class="panel-body">
+                    <img src="../../dist/img/slide1.png" width="140" height="140" alt="..." class="img-circle">
+                    <img src="../../dist/img/slide1.png" width="140" height="140" alt="..." class="img-circle">
+                    <img src="../../dist/img/slide1.png" width="140" height="140" alt="..." class="img-circle">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        方形显示。
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        <img src="../../dist/img/slide1.png" width="140" height="140" alt="..." class="img-rounded">
+                        <img src="../../dist/img/slide1.png" width="140" height="140" alt="..." class="img-thumbnail">
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        图片相册列表（row）
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 mar-btm-15">
+                            <img src="../../dist/img/slide1.png" alt="..." class="img-circle width-100">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 mar-btm-15">
+                            <img src="../../dist/img/slide1.png" alt="..." class="img-circle width-100">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 mar-btm-15">
+                            <img src="../../dist/img/slide1.png" alt="..." class="img-circle width-100">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 mar-btm-15">
+                            <img src="../../dist/img/slide1.png" alt="..." class="img-circle width-100">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 mar-btm-15">
+                            <img src="../../dist/img/slide1.png" alt="..." class="img-circle width-100">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4 mar-btm-15">
+                            <img src="../../dist/img/slide1.png" alt="..." class="img-circle width-100">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        瀑布流图片列表
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="../../dist/img/slide1.png" alt="..." class="img-circle width-80">
+                                <div class="caption">
+                                    <h3>Thumbnail label</h3>
+                                    <p>
+                                        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                    </p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        angularjs的优点
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        1.数据的双向绑定
+                    </p>
+                    <p>
+                        2.代码模块化，每个模块的代码独立拥有自己的作用域，model，controller等。
+                    </p>
+                    <p>
+                        3.强大的directive可以将很多功能封装成HTML的tag,属性或者注释等，这大大美化了HTML的结构，增强了可阅读性；                    </p>
+                    <p>
+                        4.依赖注入，将这种后端语言的设计模式赋予前端代码，这意味着前端的代码可以提高重用性和灵活性，未来的模式可能将大量操作放在客户端，服务端只提供数据来源和其他客户端无法完成的操作；                    </p>
+                    <p>
+                        5.测试驱动开发，angularjs一开始就以此为目标，使用angular开发的应用可以很容易地进行单元测试和端对端测试，这解决了传统的js代码难以测试和维护的缺陷                    </p>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        angularjs的缺点
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        1.双向数据绑定是一把双刃剑。随着组件增加，项目越来越复杂，双向数据绑定带来性能问题。
+                    </p>
+                    <p>
+                        2.在JavaScript（ES5）中，并没有实现当变量或对象改变时发出通知的功能，Angular的实现方法被叫做“Dirty-checking（脏检查机制）”，通过跟踪数据的改变再动态更新用户界面（UI）。
+                    </p>
+                    <p>
+                        3.在Angular的作用域中任何操作的执行都会引发Dirty-checking，随着绑定数量的增加性能就会越低。
+                    </p>
+                    <p>
+                        4.Angular 2.0推翻重做使得目前不宜采用此框架 ；
+                    </p>
+                    <p>
+                        5.Angular 1.x版本其实是个比较旧的东西了，现在看来有些理念过时了，比如依赖注入、自己独特的模块化，这些东西其实在ES6下已经很好地被解决了。
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-4">
+            右侧牛逼的浮动导航
+        </div>
+    </div>
+
+</div>
+<!--	-->
+<include src="../public/footer.html"></include>
+
+<script src="../../plugins/jquery-2.1.3/jquery.min.js"></script>
+<script src="../../bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script src="../../dist/js/common.js"></script>
+<script src="../../dist/js/yang.js"></script>
+</body>
+</html>
