@@ -1,3 +1,29 @@
-
+#waterfall #main {
+  display: flex; }
+#waterfall .clearfix:after,
+#waterfall .clearfix:before {
+  content: " ";
+  display: table; }
+#waterfall .clearfix:after {
+  clear: both; }
+#waterfall .main {
+  position: relative;
+  -webkit-column-width: 210px;
+  -moz-column-width: 210px;
+  -webkit-column-gap: 5px;
+  -moz-column-gap: 5px; }
+#waterfall .box {
+  float: left;
+  padding: 15px 0 0 15px; }
+#waterfall .box .pic {
+  width: 180px;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #cccccc;
+  border: 1px solid #cccccc; }
+#waterfall .box .pic img {
+  display: block;
+  width: 100%; }
 
 /*# sourceMappingURL=yang.css.map */

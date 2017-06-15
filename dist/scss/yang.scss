@@ -1,0 +1,38 @@
+#waterfall {
+  #main {
+    display: flex;
+
+  }
+
+  .clearfix:after,
+  .clearfix:before {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  .main {
+    position: relative;
+    -webkit-column-width: 210px;
+    -moz-column-width: 210px;
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+  }
+  .box {
+    float: left;
+    padding: 15px 0 0 15px;
+  }
+  .box .pic {
+    width: 180px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #cccccc;
+    border: 1px solid #cccccc;
+  }
+  .box .pic img {
+    display: block;
+    width: 100%;
+  }
+}
